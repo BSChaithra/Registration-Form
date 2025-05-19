@@ -1,4 +1,4 @@
-# Javascript-projects
+# Register Form with validation
 This repository contains project created with HTML5, CSS3 and Javascript.
 A register form with form handling and validation.
 
