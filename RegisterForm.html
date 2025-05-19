@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>
+Form
+</title>
+<link href="RegisterForm.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="root">
+<main class=flex-container>
+            
+				
+            <form id="register_form" onsubmit="event.preventDefault(); validateForm();" novalidate>
+			<div class="form-div">
+			
+                <h2>Register</h2>
+				
+				<p id="usernamep" style="color: red;"></p>
+			   <div class="flexFields">
+			   
+               <label for="User Name">User Name</label>
+               <input type="text" class="username" id="username" placeholder="User Name" value="" oninput="checkInput()"/>
+			   </div>
+			   
+			   <p id="emailp" style="color: red;"></p>
+			   <div class="flexFields">
+               <label for="Email">Email</label>
+               <input type="email" class="email" id="email" placeholder="Email" value="" oninput="checkInput()"/>
+			   </div>
+			   
+			   <p id="passwordp"style="color: red;"></p>
+			   <div class="flexFields">
+               <label for="Password">Password</label>
+               <input type="password" class="password" id="password" placeholder="Password" value="" oninput="checkInput()" />
+               </div>
+			   
+			    <p id="confirm_passwordp" style="color: red;"></p>
+			   <div class="flexFields">
+               <label for="Confirm Password">Confirm Password</label>
+               <input type="password" class="confirmpassword" id="confirmpassword" placeholder="Confirm Password" value="" oninput="checkInput()"  />
+			   </div>
+				
+               <input type="submit" value="Submit" id="submitButton" disabled>
+            
+			</div>
+			
+			<div id="passwordMatch">
+			<h2>Password requirements</h2>
+			<table>
+				<tr><td><input type="checkbox" id="lengthMatch" onclick="return false;" /><label>Password Length</label></td></tr>
+				<tr><td><input type="checkbox" id="uppercaseMatch" onclick="return false;" /><label>Uppercase letters match</label></td></tr>
+				<tr><td><input type="checkbox" id="lowercaseMatch" onclick="return false;" /><label>Lowercase letters match</label></td></tr>
+				<tr><td><input type="checkbox" id="numberMatch" onclick="return false;" /><label>Number match</label></td></tr>
+				<tr><td><input type="checkbox" id="specialMatch" onclick="return false;" /><label>Special character match</label></td></tr>
+			</table>
+			</div>
+			
+			
+			</form>
+            
+			
+			
+</main>
+</div>
+
+<script src="RegisterForm.js"></script>
+
+</body>
+</html>
