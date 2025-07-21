@@ -12,7 +12,7 @@
 		let passwordLowercase = /[a-z]+/;
 		let passwordNumbers   = /[0-9]+/;
 		let passwordSpecialCharacters = /[!@#$%^&*()]+/;
-		/*let passwordLength = /(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*()]).{8,10}/;*/
+		
 		let passwordLength;
 		if (password.length >= 8 )
 			passwordLength = true;
@@ -59,9 +59,7 @@
 			else
 				document.getElementById("confirm_passwordp").innerHTML = "Passwords do not match";	
 		}
-		/*else
-				document.getElementById("passwordp").innerHTML = "";
-			*/
+		
 	
 		
 		if( username !="" && email != "" && password != "" && confirmPassword != "" )	
